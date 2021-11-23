@@ -1,0 +1,18 @@
+.c-header__nav-link {
+    text-align: center;
+}
+
+.c-header__nav-link a {
+    text-align: center;
+    display: block;
+    font-size: rem(20);
+    font-family: $font-family-en;
+}
+
+.c-header__nav-link span {
+    font-size: rem(12);
+    display: block;
+    line-height: .1;
+    margin-top: 0;
+    color: $dark-color;
+}

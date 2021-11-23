@@ -1,12 +1,14 @@
 // 色
 $background: #fff; // 背景
-$text-color: #333; // テキスト色
+$light-color: #005BA0; // テキスト色
+$dark-color: #00355E;
 
 // マウスホバー
 $opacity: 0.7; // 透過度
 
 // フォント
-$font-family-base: "";// ベースフォント
+$font-family-base: "ほのか明朝";// ベースフォント
+$font-family-en: 'Cormorant Garamond', serif;
 $font-size-base: 16px; // ベースフォントサイズ
 $font-weight-base: 400; // ベースフォントウェイト
 $lh: 1.6; // ベース行間
@@ -15,7 +17,7 @@ $lh: 1.6; // ベース行間
 // レイアウト
 // ---
 $l-tab: 768px; // タブレットサイズ
-$l-inner: 1000px; // インナー幅
+$l-inner: 1280px; // インナー幅
 $l-pc: 1440px; // パソコン幅
 
 // ブレークポイント（PC基準）

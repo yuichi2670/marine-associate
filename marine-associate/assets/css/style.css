@@ -336,14 +336,16 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	background: #fff;
-	color: #333;
-	font-family: font-family-base;
+	color: #005BA0;
+	font-family: "ほのか明朝";
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.6;
 	min-height: 100vh;
 	min-height: -webkit-fill-available;
 	overflow-wrap: break-word;
+	position: relative;
+	z-index: -9999;
 }
 
 /* Box sizing rules */
@@ -354,65 +356,224 @@ body {
 	box-sizing: border-box;
 }
 
-/* Remove default margin */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
 
-html,
-body,
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
+a,
 p,
-figure,
+span,
+em,
+small,
+strong,
+sub,
+sup,
+mark,
+del,
+ins,
+strike,
+abbr,
+dfn,
 blockquote,
+q,
+cite,
+code,
+pre,
+ol,
+ul,
+li,
 dl,
-dd {
-	margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-
-ul[role="list"],
-ol[role="list"] {
-	list-style: none;
-}
-
-/* Set core root defaults */
-
-html:focus-within {
-	scroll-behavior: smooth;
-}
-
-/* Set core body defaults */
-
-body {
-	line-height: 1.5;
-	min-height: 100vh;
-	text-rendering: optimizeSpeed;
-}
-
-/* A elements that don't have a class get default styles */
-
-a:not([class]) {
-	-webkit-text-decoration-skip: ink;
-	text-decoration-skip-ink: auto;
-}
-
-/* Make images easier to work with */
-
+dt,
+dd,
+div,
+section,
+article,
+main,
+aside,
+nav,
+header,
+hgroup,
+footer,
 img,
-picture {
-	display: block;
+figure,
+figcaption,
+address,
+time,
+audio,
+video,
+canvas,
+iframe,
+details,
+summary,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: inherit;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+img {
+	border: none;
+	height: auto;
+	max-width: 100%;
+	vertical-align: top;
+}
+
+video,
+iframe,
+object {
+	border: none;
+	height: auto;
 	max-width: 100%;
 }
 
-/* Inherit fonts for inputs and buttons */
+ul,
+ol {
+	list-style: none;
+}
+
+table {
+	border: 1px solid;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+	width: 100%;
+}
+
+th,
+td {
+	border: 1px solid;
+	padding: 4px 6px;
+	text-align: left;
+	vertical-align: top;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::after,
+blockquote::before,
+q::after,
+q::before {
+	content: "";
+	content: none;
+}
+
+address {
+	font-style: normal;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+label {
+	display: inline-block;
+}
+
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+	touch-action: manipulation;
+}
 
 input,
 button,
-textarea,
+select,
+optgroup,
+textarea {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	margin: 0;
+}
+
+button,
 select {
-	font: inherit;
+	text-transform: none;
+}
+
+select {
+	cursor: pointer;
+}
+
+textarea {
+	-ms-overflow-style: scrollbar;
+	overflow: auto;
+	resize: vertical;
+}
+
+dialog {
+	background-color: inherit;
+	border: solid;
+	color: inherit;
+	display: block;
+	height: -webkit-fit-content;
+	height: -moz-fit-content;
+	height: fit-content;
+	left: 0;
+	margin: auto;
+	padding: 1em;
+	position: absolute;
+	right: 0;
+	width: -webkit-fit-content;
+	width: -moz-fit-content;
+	width: fit-content;
+}
+
+dialog:not([is-open]) {
+	display: none;
+}
+
+summary {
+	cursor: pointer;
+	display: list-item;
 }
 
 /* Remove all animations and transitions for people that prefer not to see them */
@@ -420,15 +581,125 @@ select {
 .l-inner {
 	height: inherit;
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 33.75rem;
 	padding-left: 20px;
 	padding-right: 20px;
-	width: 1000px;
+	width: 100%;
+}
+
+.l-main-visual {
+	margin-top: 5rem;
+}
+
+.c-header__nav-link {
+	text-align: center;
+}
+
+.c-header__nav-link a {
+	display: block;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.c-header__nav-link span {
+	color: #00355E;
+	display: block;
+	font-size: 0.75rem;
+	line-height: .1;
+	margin-top: 0;
 }
 
 .c-test {
 	color: red;
 	font-size: 1.25rem;
+}
+
+.p-header {
+	background-color: #fff;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 200;
+}
+
+.p-header__inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.p-header__title {
+	margin-right: 1.5625rem;
+	max-width: 23.125rem;
+	padding-top: 1.25rem;
+	width: 100%;
+}
+
+.p-header__title span {
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.5rem;
+}
+
+.p-header__title span:nth-child(1) {
+	color: #3BA2D8;
+}
+
+.p-header__title span:nth-child(2) {
+	color: #005BA0;
+}
+
+.p-header__title span:nth-child(3) {
+	color: #00355E;
+}
+
+.p-header__title span:nth-child(4) {
+	display: block;
+	font-family: "ほのか明朝";
+	font-size: 0.75rem;
+	letter-spacing: 0;
+	line-height: .1;
+	margin-top: 0;
+}
+
+.p-header__title span:not(:last-child) {
+	margin-right: 0.1875rem;
+}
+
+.p-header__nav {
+	display: flex;
+	height: 5rem;
+}
+
+.p-header__nav li:not(:last-child) {
+	padding-right: 2.1875rem;
+}
+
+.p-header__nav-links {
+	display: flex;
+	padding-right: 2.5rem;
+	padding-top: 1.25rem;
+}
+
+.p-header__contact {
+	background-color: #00355E;
+	color: #fff;
+	width: 12.5rem;
+}
+
+.p-header__contact a {
+	display: block;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 1.25rem;
+	padding-top: 1.25rem;
+	text-align: center;
+}
+
+.p-header__contact span {
+	display: block;
+	font-size: 0.75rem;
+	line-height: .5;
+	margin-top: 0;
 }
 
 .p-test {
@@ -467,25 +738,14 @@ html {
 
 }
 
-@media screen and (min-width: 375px) and (min-width: 768px) {
-
-html {
-	font-size: 1.6vw;
-}
-
-}
-
-@media screen and (min-width: 375px) and (min-width: 1000px) {
-
-html {
-	font-size: 16px;
-}
-
-}
-
 @media screen and (min-width: 768px) {
 
+html {
+	font-size: 1.25vw;
+}
+
 .l-inner {
+	max-width: 1330px;
 	padding-left: 25px;
 	padding-right: 25px;
 }
@@ -502,7 +762,15 @@ html {
 
 }
 
-@media screen and (min-width: 1000px) {
+@media (min-width: 1280px) {
+
+html {
+	font-size: 16px;
+}
+
+}
+
+@media screen and (min-width: 1280px) {
 
 .c-test {
 	color: blue;
