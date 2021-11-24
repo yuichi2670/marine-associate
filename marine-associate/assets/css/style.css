@@ -465,17 +465,14 @@ ol {
 }
 
 table {
-	border: 1px solid;
 	border-collapse: collapse;
 	border-spacing: 0;
-	table-layout: fixed;
-	width: 100%;
 }
 
 th,
 td {
 	border: 1px solid;
-	padding: 4px 6px;
+	padding: 0;
 	text-align: left;
 	vertical-align: top;
 }
@@ -591,6 +588,10 @@ summary {
 	margin-top: 5rem;
 }
 
+.c-footer__address {
+	font-size: 0.875rem;
+}
+
 .c-footer__nav-link {
 	text-align: center;
 }
@@ -617,8 +618,7 @@ summary {
 }
 
 .c-footer__sns-item-link {
-	max-width: 1.375rem;
-	width: 100%;
+	font-size: 1.375rem;
 }
 
 .c-header__nav-link {
@@ -701,7 +701,20 @@ summary {
 .p-footer__access {
 	color: #fff;
 	font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
-	margin-top: 1.5625rem;
+	font-size: 0.875rem;
+	margin-top: 1.8125rem;
+}
+
+.p-footer__telMail,
+.p-footer__telMail th,
+.p-footer__telMail td {
+	border: none;
+	border-collapse: collapse;
+	padding: 0;
+}
+
+.p-footer__telMail th {
+	width: 3.125rem;
 }
 
 .p-footer__sns {

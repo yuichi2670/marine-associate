@@ -40,9 +40,26 @@
 }
 
 .p-footer__access {
-    margin-top: rem(25);
+    margin-top: rem(29);
     font-family:"游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
     color: #fff;
+    font-size: rem(14);
+}
+
+.p-footer__telMail,
+.p-footer__telMail th,
+.p-footer__telMail td {
+    border: none;
+    border-collapse: collapse ;
+    padding: 0;
+}
+
+.p-footer__telMail th {
+    width: rem(50);
+}
+
+.p-footer__telMail td {
+
 }
 
 .p-footer__sns {
@@ -50,7 +67,6 @@
     display: flex;
     margin-top: rem(29);
 }
-
 
 .p-footer__sns li:not(:last-child) {
     margin-right: rem(22);

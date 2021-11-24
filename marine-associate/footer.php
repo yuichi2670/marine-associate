@@ -11,8 +11,18 @@
                 <div class="p-footer__title"><span>MARINE</span><span>ACTIVITY</span><span>ASSOCIATION</span><span>一般社団法人 渋川マリンアクティビティ協会</span></div><!-- /p-footer__title -->
                 <div class="p-footer__access">
                     <div class="c-footer__address">〒706-0024  岡山県玉野市御崎2-13-21</div><!-- /p-footer__address -->
-                    <div class="c-footer__tel">TEL    ： 050-3503-1079</div><!-- /c-footer__tel -->
-                    <div class="c-footer__mail">MAIL   ： info@you-make-okayama.jp</div><!-- /c-footer__mail -->
+                    <table class="p-footer__telMail">
+                        <tr class="p-footer__tel">
+                            <th>TEL</th>
+                            <td>：</td>
+                            <td>050-3503-1079</td>
+                        </tr>
+                        <tr class="p-footer__mail">
+                            <th>MAIL</th>
+                            <td>：</td>
+                            <td>info@you-make-okayama.jp</td>
+                        </tr>
+                    </table>
                 </div><!-- /p-footer__access -->
                 <ul class="p-footer__sns">
                     <li class="p-footer__sns-item">
