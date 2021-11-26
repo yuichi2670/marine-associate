@@ -1,9 +1,4 @@
-<div class="l-top p-top">
-    <a href="#" class="p-top__items">
-        <div class="c-top__arrow"></div><!-- /c-top__arrow -->
-        <div class="c-top__text">PAGE TOP</div>
-    </a>
-</div><!-- /p-top -->
+
 <footer class="l-footer p-footer">
     <div class="p-footer__inner l-inner">
         <div class="p-footer__container">
