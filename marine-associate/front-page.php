@@ -48,6 +48,63 @@
     </div><!-- /p-movie__img -->
   </section>
 
+  <section class="l-projects p-projects">
+    <div class="p-projects__inner">
+      <div class="p-projects__items">
+        <div class="p-projects__title">
+          <h1>PROJECTS</h1>
+        </div><!-- /p-projects__title -->
+        <div class="p-projects__text">
+          <p>未来を担う子どもたちや、若者の夢を育むことで、岡山の未来を変え、<br>明るい豊かな社会づくりに貢献することを目的とし、<br>３つの視点から様々な取り組みをしています。</p>
+        </div><!-- /p-projects__text -->
+      </div><!-- /p-projects__items -->
+      <div class="p-projects__cards">
+        <div class="p-projects__card">
+          <div class="p-projects__icon">
+              <p>街</p>
+          </div><!-- /p-project__icon -->
+          <div class="p-projects__card-img">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/project-town.jpg"alt="">
+          </div><!-- /p-project__card-img -->
+          <div class="p-projects__card-title">
+            <h2>まちづくり</h2>
+          </div><!-- /p-projects__card-title -->
+          <div class="p-projects__card-text">
+            <p>私たちは、渋川・王子が岳エリアの観光振興を推進する団体です。地域発展において、主体性を持った人財は、正に地域の宝と言えます。</p>
+          </div><!-- /p-project__card-text -->
+        </div><!-- /p-project__card -->
+        <div class="p-projects__card">
+          <div class="p-projects__icon">
+            <p>人</p>
+          </div><!-- /p-project__icon -->
+          <div class="p-projects__card-img">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/project-human.jpg"alt="">
+          </div><!-- /p-project__card-img -->
+          <div class="p-projects__card-title">
+            <h2>ひとづくり</h2>
+          </div><!-- /p-projects__card-title -->
+          <div class="p-projects__card-text">
+            <p>私たちは、渋川・王子が岳エリアの観光振興を推進する団体です。地域発展において、主体性を持った人財は、正に地域の宝と言えます。</p>
+          </div><!-- /p-project__card-text -->
+        </div><!-- /p-project__card -->
+        <div class="p-projects__card">
+          <div class="p-projects__icon">
+              <p>未来</p>
+          </div><!-- /p-project__icon -->
+          <div class="p-projects__card-img">
+          <img src="<?php echo get_template_directory_uri() ?>/assets/img/project-future.jpg"alt="">
+          </div><!-- /p-project__card-img -->
+          <div class="p-projects__card-title">
+            <h2>未来づくり</h2>
+          </div><!-- /p-projects__card-title -->
+          <div class="p-projects__card-text">
+            <p>私たちは、渋川・王子が岳エリアの観光振興を推進する団体です。地域発展において、主体性を持った人財は、正に地域の宝と言えます。</p>
+          </div><!-- /p-project__card-text -->
+        </div><!-- /p-project__card -->
+      </div><!-- /p-projects__cards -->
+    </div><!-- /p-projects__inner -->
+  </section><!-- /p-projects -->
+
 
   <div class="l-top p-top">
     <a href="#" class="p-top__items">

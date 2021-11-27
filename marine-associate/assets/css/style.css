@@ -598,6 +598,10 @@ summary {
 	margin-top: 13.3125rem;
 }
 
+.l-projects {
+	margin-top: 11.25rem;
+}
+
 .l-space {
 	margin-top: 5rem;
 }
@@ -736,7 +740,7 @@ summary {
 
 .p-about__text {
 	color: #333333;
-	font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
+	font-family: "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
 	font-feature-settings: "palt";
 	font-size: 0.9375rem;
 	margin-right: 1.5625rem;
@@ -802,7 +806,7 @@ summary {
 .p-about__text2 {
 	bottom: -3.75rem;
 	color: #333333;
-	font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
+	font-family: "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
 	font-feature-settings: "palt";
 	font-size: 0.9375rem;
 	margin-left: 2.1875rem;
@@ -819,7 +823,7 @@ summary {
 	border-radius: 50vh;
 	color: #fff;
 	display: block;
-	font-family: "游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
+	font-family: "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
 	font-feature-settings: "palt";
 	font-size: 1rem;
 	margin-left: auto;
@@ -1038,6 +1042,133 @@ summary {
 
 .p-movie__img img {
 	width: 100%;
+}
+
+.p-projects__inner {
+	padding-left: 2.25rem;
+	padding-right: 2.25rem;
+}
+
+.p-projects__items {
+	background: linear-gradient(rgba(59, 162, 216, 0.61), rgba(59, 162, 216, 0.61)), url(../img/projects-bg.jpg);
+	background-size: cover;
+	position: relative;
+	z-index: -1;
+}
+
+.p-projects__title {
+	left: 50%;
+	position: absolute;
+	top: -3.125rem;
+	transform: translateX(-50%);
+}
+
+.p-projects__title h1 {
+	color: #005BA0;
+	font-family: "Cormorant Garamond", serif;
+	font-size: 6.25rem;
+	font-weight: lighter;
+	line-height: 1;
+}
+
+.p-projects__text {
+	padding: 6.25rem 0 15.9375rem;
+	text-align: center;
+}
+
+.p-projects__text p {
+	color: #fff;
+	font-family: "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
+	font-feature-settings: "palt";
+	font-size: 1.25rem;
+	line-height: 1.9;
+}
+
+.p-projects__cards {
+	display: flex;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -10rem;
+	max-width: 85.5rem;
+	padding-left: 4.5rem;
+	padding-right: 4.5rem;
+	width: 100%;
+}
+
+.p-projects__card {
+	margin-right: 4.5rem;
+	position: relative;
+	width: 100%;
+	width: calc(33.3% - 72px * 2 / 3);
+}
+
+.p-projects__card:nth-child(3n) {
+	margin-right: 0;
+}
+
+.p-projects__icon {
+	-ms-writing-mode: tb-rl;
+	position: absolute;
+	right: -3.75rem;
+	top: -2rem;
+	writing-mode: vertical-rl;
+	z-index: 100;
+}
+
+.p-projects__icon p {
+	color: #fff;
+	font-size: 7.5rem;
+	line-height: 1;
+}
+
+.p-projects__card:not(:last-child) {
+	margin-right: 4.5rem;
+}
+
+.p-projects__card-img {
+	background-color: #fff;
+	display: inline-block;
+	max-width: 22.5rem;
+	position: relative;
+	width: 100%;
+}
+
+.p-projects__card-img::after {
+	-o-object-fit: cover;
+	-o-object-position: top;
+	content: "";
+	display: block;
+	object-fit: cover;
+	object-position: top;
+	padding-top: 144%;
+}
+
+.p-projects__card-img img {
+	display: block;
+	left: 0;
+	opacity: .8;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.p-projects__card-title {
+	color: #333333;
+	font-family: "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
+	font-feature-settings: "palt";
+	font-size: 2rem;
+	line-height: 1;
+	margin-top: 1.75rem;
+}
+
+.p-projects__card-text {
+	color: #333333;
+	font-family: "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ";
+	font-feature-settings: "palt";
+	font-size: 1rem;
+	line-height: 2;
+	margin-top: 1.75rem;
 }
 
 .p-test {
