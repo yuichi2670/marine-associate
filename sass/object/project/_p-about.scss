@@ -1,6 +1,12 @@
 .p-about {
     padding-top: rem(70);
-    
+    @include mq(lg) {
+        max-width: rem(1260);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
 }
 
 .p-about__inner {

@@ -1,0 +1,22 @@
+.l-access {
+    margin-top: rem(253);
+    position: relative;
+}
+
+.l-access::after {
+    position: absolute;
+    content: "";
+    top: rem(50);
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 77.7%;
+    background: $background-color;
+    z-index: -1;
+}
+
+
+
+.l-access__btn {
+    margin-top: rem(54);
+}
