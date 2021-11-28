@@ -1,0 +1,124 @@
+.p-project {
+    position: relative;
+}
+
+.p-project__inner {
+    
+}
+
+.p-project__container {
+    padding: rem(250) 0 rem(114);
+}
+
+.p-project__content {
+    
+    color: #fff;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    
+}
+
+
+.p-project__number {
+    background-color: $dark-color;
+    font-family: $font-family-en;
+    padding: rem(7) rem(10) rem(16) rem(10);
+    line-height: (28 / 30);
+    font-size: rem(28);
+    max-height: rem(300);
+}
+
+.p-project__number span {
+    -ms-writing-mode: lr-tb;
+     writing-mode: horizontal-tb;
+}
+
+.p-project__number span {
+    font-family: $font-family-base;
+    padding-top: rem(10);
+}
+
+.p-project__title {
+    
+    
+    background-color: $light-color;
+    padding: rem(10) 0;
+    
+   
+}
+
+.p-project__title h2 {
+    font-size: rem(80);
+    font-weight: lighter;
+    letter-spacing: .14em;
+    line-height: 1;
+    
+}
+
+.p-project__textBox {
+    max-width: rem(655);
+    width: 100%;
+    position: relative;
+}
+
+.p-project__icon {
+    
+}
+
+.p-project__text-short,
+.p-project__text-middle,
+.p-project__text-long {
+    background-color: #fff;
+    line-height: 1;
+    width: 100%;
+    color: $dark-color;
+    padding: rem(5) 0;
+}
+
+.p-project__text-short,
+.p-project__text-middle {
+    font-size: rem(27);
+    font-family: $font-family-YuMincho;
+}
+
+.p-project__text-middle,
+.p-project__text-long {
+    margin-top: rem(15);
+}
+
+.p-project__text-short {
+    max-width: rem(421);
+ }
+ 
+ .p-project__text-middle {
+     max-width: rem(538);
+ }
+ 
+ .p-project__text-long {
+     font-family: $font-family-en;
+     font-size: rem(16);
+     max-width: rem(655);
+ }
+ 
+ .p-project__btn {
+    
+    text-align: center;
+    box-sizing: border-box;
+    
+ }
+
+ .p-project__btn a {
+    display: block;
+    background-color: #fff;
+    max-width: rem(216);
+    width: 100%;
+    padding: rem(14) 0;
+    font-size: rem(18);
+    font-family: $font-family-en;
+    color: $dark-color;
+    cursor: pointer;
+    border: rem(1) solid $dark-color;
+    text-align: center;
+    line-height: 1;
+ }

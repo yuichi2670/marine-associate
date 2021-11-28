@@ -1,0 +1,113 @@
+.p-footer {
+    background: linear-gradient(rgba(0,53,94,.6), rgba(0,53,94,.6)), url(../img/footer-bg.jpg);
+    background-size: cover;
+
+}
+
+.p-footer__inner {
+    padding: rem(50) rem(72) rem(34);
+    
+}
+
+.p-footer__container {
+    display: flex;
+    z-index: 1;
+}
+
+
+.p-footer__title {
+    max-width: rem(370);
+    width: 100%;
+    color: #fff;
+}
+
+.p-footer__title span {
+    font-size: rem(24);
+    font-family: $font-family-en;
+}
+
+.p-footer__title span:nth-child(4) {
+    font-size: rem(12);
+    font-family: $font-family-base;
+    display: block;
+    line-height: .1;
+    margin-top: 0;
+    letter-spacing: 0;
+}
+
+.p-footer__title span:not(:last-child) {
+    margin-right: rem(3);
+}
+
+.p-footer__access {
+    margin-top: rem(29);
+    font-family:"游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ ゴシック", sans-serif;
+    color: #fff;
+    font-size: rem(14);
+}
+
+.p-footer__telMail,
+.p-footer__telMail th,
+.p-footer__telMail td {
+    border: none;
+    border-collapse: collapse ;
+    padding: 0;
+}
+
+.p-footer__telMail th {
+    width: rem(50);
+}
+
+.p-footer__telMail td {
+
+}
+
+.p-footer__sns {
+    color: #fff;
+    display: flex;
+    margin-top: rem(29);
+}
+
+.p-footer__sns li:not(:last-child) {
+    margin-right: rem(22);
+}
+
+.p-footer__nav {
+    display: flex;
+    height: rem(80);
+    margin-left: auto;
+    
+}
+
+.p-footer__nav li:not(:last-child) {
+    padding-right: rem(35);
+}
+
+.p-footer__nav-links {
+    display: flex;
+    padding-top: rem(20);
+    padding-right: rem(40);
+    color: #fff;
+}
+
+.p-footer__contents {
+    margin-top: rem(76);
+    margin-bottom: rem(34);
+    display: flex;
+
+}
+
+.p-footer__otherLinks a:nth-child(1) {
+    margin-right: rem(20);
+}
+
+.p-footer__otherLinks a:nth-child(2) {
+    margin-right: rem(56);
+}
+
+.p-footer__copy {
+    font-size: rem(12);
+    font-family:"游明朝体", "Yu Mincho", YuMincho, "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "メイリオ" ;
+    margin-left: auto;
+    color: #fff;
+}

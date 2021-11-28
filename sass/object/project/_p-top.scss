@@ -1,0 +1,12 @@
+.p-top {
+    width: 100%;
+    height: rem(80);
+    background-color: $dark-color;
+    position: relative;
+}
+.p-top__items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,21 @@
+.p-movie {
+    background: url(../img/movie-bg.jpg);
+    background-size: cover;
+    height: rem(520);
+    box-shadow: inset 0px 199px 452px 5px rgba(255, 255, 255, 1);
+    position: relative;
+}
+
+.p-movie__img {
+    position: absolute;
+    max-width: rem(700);
+    width: 100%;
+    content: "";
+    top: rem(-110);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p-movie__img img {
+    width: 100%;
+}

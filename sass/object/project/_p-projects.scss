@@ -1,0 +1,135 @@
+.p-projects {
+
+}
+
+.p-projects__inner {
+    padding-left: rem(36);
+    padding-right: rem(36);
+}
+
+.p-projects__items {
+    background: linear-gradient(rgba(59,162,216,.61), rgba(59,162,216,.61)), url(../img/projects-bg.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.p-projects__title {
+    position: absolute;
+    top: rem(-50);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.p-projects__title h1 {
+    font-size: rem(100);
+    font-family: $font-family-en;
+    color: $light-color;
+    line-height: 1;
+    font-weight: lighter;
+}
+
+.p-projects__text {
+    padding: rem(100) 0 rem(255);
+    text-align: center;
+}
+
+.p-projects__text p {
+    font-family: $font-family-YuMincho;
+    font-size: rem(20);
+    font-feature-settings: "palt";
+    line-height: (38 / 20);
+    color: #fff;
+}
+
+.p-projects__cards {
+    display: flex;
+    max-width: rem(1368);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+    margin-top: rem(-160);
+    padding-left: rem(72);
+    padding-right: rem(72);
+}
+
+
+.p-projects__card {
+    width: 100%;
+    position: relative;
+    width: calc(33.3% - 72px * 2 / 3);
+    margin-right: rem(72);
+}
+
+.p-projects__card:nth-child(3n) {
+    margin-right: 0;
+}
+
+.p-projects__icon {
+    position: absolute;
+    top: rem(-32);
+    right: rem(-60);
+    z-index: 100;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+
+.p-projects__icon p {
+    font-size: rem(120);
+    color: #fff;
+    line-height: 1;
+}
+
+
+.p-projects__card:not(:last-child) {
+    margin-right: rem(72);
+}
+
+.p-projects__card-img {
+    position: relative;
+    max-width: rem(360);
+    width: 100%;
+    background-color: #fff;
+    display: inline-block;
+    
+}
+
+
+
+.p-projects__card-img::after {
+    content: "";
+    display: block;
+    padding-top: 144%;
+    object-fit: cover;
+    object-position: top;
+    
+}
+
+.p-projects__card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    opacity: .8;
+    
+}
+
+.p-projects__card-title {
+    margin-top: rem(28);
+    font-size: rem(32);
+    font-family: $font-family-YuMincho;
+    font-feature-settings: "palt";
+    color: $text-color;
+    line-height: 1;
+}
+
+.p-projects__card-text {
+    font-size: rem(16);
+    font-family: $font-family-YuMincho;
+    font-feature-settings: "palt";
+    margin-top: rem(28);
+    color: $text-color;
+    line-height: (32 / 16);
+}
