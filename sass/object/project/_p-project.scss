@@ -1,5 +1,8 @@
 .p-project {
-    position: relative;
+    max-width: rem(1440);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .p-project__inner {

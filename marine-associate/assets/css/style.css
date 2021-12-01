@@ -575,6 +575,10 @@ summary {
 
 /* Remove all animations and transitions for people that prefer not to see them */
 
+.l-about {
+	margin-top: 9.5rem;
+}
+
 .l-access {
 	margin-top: 15.8125rem;
 	position: relative;
@@ -598,7 +602,6 @@ summary {
 
 .l-header {
 	background-color: #fff;
-	height: 5rem;
 	left: 0;
 	position: fixed;
 	right: 0;
@@ -619,8 +622,13 @@ summary {
 	margin-top: 13.3125rem;
 }
 
+.l-mv {
+	margin-top: 11.25rem;
+}
+
 .l-project {
 	margin-top: 14.5rem;
+	position: relative;
 }
 
 .l-project__container::before {
@@ -1168,7 +1176,7 @@ summary {
 }
 
 .p-header {
-	height: 5rem;
+	width: 100%;
 }
 
 .p-header__inner {
@@ -1272,8 +1280,99 @@ summary {
 	width: 100%;
 }
 
-.p-project {
+.p-mv {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90rem;
 	position: relative;
+	width: 100%;
+}
+
+.p-mv__inner {
+	position: relative;
+}
+
+.p-mv::before {
+	background-color: rgba(59, 162, 216, 0.12);
+	content: "";
+	height: 94.6%;
+	left: 0;
+	max-width: 81rem;
+	position: absolute;
+	top: 8.9375rem;
+	width: 100%;
+	z-index: -2;
+}
+
+.p-mv__box {
+	position: relative;
+}
+
+.p-mv__img {
+	margin-left: auto;
+	max-width: 87.75rem;
+	padding-left: 2.25rem;
+	position: relative;
+	width: 100%;
+	z-index: -1;
+}
+
+.p-mv__textBox {
+	height: auto;
+	left: 9rem;
+	max-width: 40.9375rem;
+	position: absolute;
+	top: 58%;
+	width: 100%;
+}
+
+.p-mv__text,
+.p-mv__text-en {
+	background-color: #fff;
+	color: #00355E;
+	line-height: 1;
+}
+
+.p-mv__text:nth-child(2n),
+.p-mv__text-en {
+	margin-top: 0.9375rem;
+}
+
+.p-mv__text {
+	display: inline-block;
+	padding: 0.3125rem 0;
+}
+
+.p-mv__text p {
+	font-feature-settings: "palt";
+	font-size: 1.875rem;
+	line-height: 1;
+}
+
+.p-mv__text-en {
+	padding: 0.3125rem 0;
+}
+
+.p-mv__text-en p {
+	font-family: "Cormorant Garamond", serif;
+	font-feature-settings: "palt";
+	font-size: 1rem;
+}
+
+.p-mv__title {
+	content: "";
+	max-width: 12.6875rem;
+	position: absolute;
+	right: 1.875rem;
+	top: -5.75rem;
+	width: 100%;
+}
+
+.p-project {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 90rem;
+	width: 100%;
 }
 
 .p-project__container {

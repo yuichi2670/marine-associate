@@ -1,6 +1,26 @@
 <?php get_header(); ?>
 
-  <div class="l-space"></div><!-- /l-space -->
+<div class="l-mv p-mv">
+  <div class="p-mv__inner">
+    <div class="p-mv__img">
+      <img src="<?php echo get_template_directory_uri() ?>/assets/img/main-visual.jpg" alt="">
+      <div class="p-mv__title">
+        <img src="<?php echo get_template_directory_uri() ?>/assets/img/mv-title.svg" alt="">
+      </div><!-- /p-mv__title -->
+    </div>      
+      <div class="p-mv__textBox">
+        <div class="p-mv__text">
+          <p>『一生のうちで必ず叶えたいこと』の実現へ。</p>
+        </div><!-- /p-mv__text -->
+        <div class="p-mv__text">
+          <p>私達が全力でサポートします。</p>
+        </div><!-- /p-mv__text -->
+        <div class="p-mv__text-en">
+          <p>Toward the realization of "what I want to achieve in my lifetime” , We will do our best to support you.</p>
+        </div><!-- /p-mv__text -->
+      </div><!-- /p-mv__textBox -->
+    </div><!-- /p-mv__inner -->
+  </div><!-- /p-mv -->
 
   <section class="l-about p-about">
     <div class="p-about__inner">
