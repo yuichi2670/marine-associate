@@ -1,0 +1,50 @@
+.l-footer-title {
+}
+
+.l-footer-address {
+    margin-top: rem(25);
+}
+
+.l-footer-table {
+    margin-top: rem(1);
+}
+
+.l-footer-sns {
+    margin-top: rem(30);
+}
+
+.l-footer-nav {
+    margin-top: rem(50);
+}
+
+
+.l-footer-navLink:nth-child(n + 2) {
+    margin-top: rem(30);
+
+    @include mq(tab) {
+        margin-top: 0;
+        margin-left: rem(20);
+    }
+}
+
+.l-footer-line {
+    margin-top: rem(38);
+    @include mq(tab) {
+        margin-top: rem(45)
+    }
+    
+}
+
+.l-footer-infoItem {
+    @include mq(tab) {
+        // margin-top: rem(26);
+        // margin-bottom: rem(35);
+    }
+}
+
+
+.l-footer-infoLink:nth-child(n + 2){
+    margin-left: rem(20);
+}
+
+

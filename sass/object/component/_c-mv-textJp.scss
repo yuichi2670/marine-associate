@@ -1,0 +1,40 @@
+.c-mv-textJp {
+    background-color: $background;
+    display: inline-block;
+    color: $dark-color;
+    padding-left: rem(8);
+    padding-right: rem(8);
+
+    @include mq(tab) {
+        font-size: rem(30);
+        line-height: 1.2;
+    }
+}
+
+.c-mv-textJp:nth-child(n + 2) {
+    margin-top: rem(12);
+}
+
+.c-mv-textEn {
+    background-color: $background;
+    
+    color: $dark-color;
+    font-size: rem(12);
+    font-family: $font-family-en;
+    // margin-top: rem(32);
+    padding-left: rem(6);
+    padding-right: rem(6);
+    display: inline-block;
+    
+
+    @include mq(tab) {
+        font-size: rem(16);
+        margin-top: rem(12);
+        // display: inline-block!important;
+    }
+}
+
+.c-mv-textEn:nth-child(n + 2) {
+    margin-top: rem(12);
+    
+}

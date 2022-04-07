@@ -1,0 +1,11 @@
+.c-project-btn {
+    background-color: $background;
+    color: $dark-color;
+    display: inline-block;
+    font-family: $font-family-en;
+    font-size: rem(18);
+    font-weight: 400;
+    line-height: (22 / 18);
+    padding: rem(14) rem(80);
+    border: rem(1) solid #10355B;
+}

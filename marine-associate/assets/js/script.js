@@ -22,6 +22,25 @@ jQuery(function() {
 		return false;
 	});
 
+	$('.js-hamburger').on('click', function () {
+		if ($('.js-hamburger').hasClass('open')) {
+			$('.js-drawer-menu').fadeOut();
+			$('.js-overlay').fadeOut();
+			$(this).removeClass('open');
+			$('.menu').removeClass('open');
+		} else {
+			$('.js-drawer-menu').fadeIn();
+			$('.js-overlay').fadeIn();
+			$(this).addClass('open');
+		}
+	   });
+
+	$('.js-overlay').on('click', function () {
+		$('.js-drawer-menu').fadeOut();
+		$('.js-overlay').fadeOut();
+		$('.js-hamburger').removeClass('open');
+   });
+
 	/* スムーススクロール */
 	jQuery('a[href^="#"]').click(function() {
 		let header = jQuery(".js-header").height();

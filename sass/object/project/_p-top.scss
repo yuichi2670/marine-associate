@@ -1,12 +1,43 @@
 .p-top {
-    width: 100%;
-    height: rem(80);
     background-color: $dark-color;
+    padding-top: rem(17);
+    width: 100%;
     position: relative;
+
+    @include mq(tab) {
+        padding-top: rem(25);
+    }
 }
-.p-top__items {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.p-top-item {
+    padding: rem(12) 0;
+}
+
+.p-top-arrow {
+    border-top: solid rem(2) #fff;
+    border-left: solid rem(2) #fff;
+    width: rem(14);
+    height: rem(14);
+    transform: rotate(45deg); 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-top-text {
+    text-align: center;
+    padding-bottom: rem(10);
+
+    @include mq(tab) {
+        padding-bottom: rem(20);
+    }
+}
+
+.p-top-text p {
+    color: #fff;
+    font-size: rem(15);
+    font-family: $font-family-en;
+
+    @include mq(tab) {
+        font-size: rem(20);
+    }
 }

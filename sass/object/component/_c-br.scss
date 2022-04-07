@@ -1,0 +1,13 @@
+.c-br-pc {
+    display: none;
+
+    @include mq(tab) {
+        display: block;
+    }
+}
+
+.c-br-sp {
+    @include mq(tab) {
+        display: none;
+    }
+}

@@ -1,3 +1,29 @@
 .l-sdgs {
-    margin-top: rem(200);
+    margin-top: rem(80);
+
+    @include mq(tab) {
+        margin-top: rem(200);
+    }
+}
+
+.p-sdgs-itemBox {
+    @include mq(tab) {
+        margin-left: rem(40);
+    }
+}
+
+.l-sdgs-title {
+    margin-top: rem(24);
+}
+
+.l-sdgs-text {
+    margin-top: rem(18);
+}
+
+.l-sdgs-border {
+    margin-top: rem(18);
+
+    @include mq(tab) {
+        margin-top: rem(25);
+    }
 }

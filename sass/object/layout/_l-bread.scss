@@ -1,0 +1,9 @@
+.l-bread {
+    margin-top: 12%;
+
+    @include mq(tab) {
+        margin-top: rem(25);
+        margin-bottom: rem(25);
+        margin-right: rem(70);
+    }
+}

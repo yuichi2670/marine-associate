@@ -1,135 +1,211 @@
 .p-projects {
-
-}
-
-.p-projects__inner {
-    padding-left: rem(36);
-    padding-right: rem(36);
-}
-
-.p-projects__items {
-    background: linear-gradient(rgba(59,162,216,.61), rgba(59,162,216,.61)), url(../img/projects-bg.jpg);
-    background-size: cover;
     position: relative;
-    z-index: -1;
 }
 
-.p-projects__title {
-    position: absolute;
-    top: rem(-50);
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.p-projects__title h1 {
-    font-size: rem(100);
-    font-family: $font-family-en;
-    color: $light-color;
-    line-height: 1;
-    font-weight: lighter;
-}
-
-.p-projects__text {
-    padding: rem(100) 0 rem(255);
-    text-align: center;
-}
-
-.p-projects__text p {
-    font-family: $font-family-YuMincho;
-    font-size: rem(20);
-    font-feature-settings: "palt";
-    line-height: (38 / 20);
-    color: #fff;
-}
-
-.p-projects__cards {
-    display: flex;
-    max-width: rem(1368);
+.p-projects-titleBox {
+    background-image: url(../img/projects-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: rem(282);
+    position: relative;
+    max-width: rem(600);
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    justify-content: space-between;
-    margin-top: rem(-160);
-    padding-left: rem(72);
-    padding-right: rem(72);
+    z-index: -1;
+
+    @include mq(tab) {
+        max-width: rem(1368);
+        height: rem(460);
+    }
 }
 
-
-.p-projects__card {
-    width: 100%;
-    position: relative;
-    width: calc(33.3% - 72px * 2 / 3);
-    margin-right: rem(72);
-}
-
-.p-projects__card:nth-child(3n) {
-    margin-right: 0;
-}
-
-.p-projects__icon {
+.p-projects-titleBox::before {
     position: absolute;
-    top: rem(-32);
-    right: rem(-60);
-    z-index: 100;
-    -ms-writing-mode: tb-rl;
-    writing-mode: vertical-rl;
-}
-
-.p-projects__icon p {
-    font-size: rem(120);
-    color: #fff;
-    line-height: 1;
-}
-
-
-.p-projects__card:not(:last-child) {
-    margin-right: rem(72);
-}
-
-.p-projects__card-img {
-    position: relative;
-    max-width: rem(360);
-    width: 100%;
-    background-color: #fff;
-    display: inline-block;
-    
-}
-
-
-
-.p-projects__card-img::after {
     content: "";
-    display: block;
-    padding-top: 144%;
-    object-fit: cover;
-    object-position: top;
-    
-}
-
-.p-projects__card-img img {
-    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    display: block;
-    opacity: .8;
+    width: 100%;
+    height: 100%;
+    background-color: $background-shadow;
+    z-index: -1;
     
 }
 
-.p-projects__card-title {
-    margin-top: rem(28);
-    font-size: rem(32);
-    font-family: $font-family-YuMincho;
-    font-feature-settings: "palt";
-    color: $text-color;
-    line-height: 1;
+.p-projects-titles {
+    position: absolute;
+    content: "";
+    top: rem(-26);
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    @include mq(tab) {
+        top: rem(-50);
+    }
 }
 
-.p-projects__card-text {
-    font-size: rem(16);
-    font-family: $font-family-YuMincho;
-    font-feature-settings: "palt";
-    margin-top: rem(28);
-    color: $text-color;
+.p-projects-titles {
+    width: 100%;
+}
+
+.p-projects-title {
+
+}
+
+.p-projects-title h2 {
+    line-height: 1;
+    font-family: $font-family-en;
+    font-size: rem(52);
+    font-weight: 400;
+    color: $light-color;
+
+    @include mq(tab) {
+        font-size: rem(100);
+    }
+}
+
+.p-projects-subtitle p {
+    font-family: $font-family-base;
+    font-size: rem(14);
+    line-height: (28 / 14);
+    color: #fff;
+
+    @include mq(tab) {
+        font-size: rem(20);
+        line-height: (38 / 20);
+    }
+}
+
+.p-projects-cards {
+    z-index: 10;
+
+    @include mq(tab) {
+        display: flex;
+        justify-content: center;
+        max-width: rem(1300);
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.p-projects-card {
+    padding-right: rem(15);
+    padding-left: rem(15);
+
+    @include mq(tab) {
+        padding: 0;
+    }
+}
+
+.p-projects-picture {
+    position: relative;
+    max-width: rem(360);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+    border-radius: rem(4);
+
+    @include mq(tab) {
+        max-width: rem(360);
+    }
+    
+}
+
+.p-projects-picture::before {
+    content: "";
+    display: block;
+    padding-top: 47.7%;
+
+    @include mq(tab) {
+        padding-top: 130%;
+    }
+}
+
+.p-projects-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: rem(4);
+    -webkit-mask-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8));
+           mask-image: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8));
+}
+
+.p-projects-theme {
+    font-size: rem(75);
+    font-weight: 400;
+    line-height: 1;
+    position: absolute;
+    content: "";
+    top: rem(-25);
+    right: rem(5);
+    color: $light-color;
+    z-index: 2;
+    text-shadow: 0px 3px 6px rgba(255,255,255,.5);
+    
+
+    @include mq(tab) {
+        color: #fff;
+        font-size: rem(110);
+         -ms-writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        top: rem(-35);
+        right: rem(-40);
+        text-shadow: 0px 3px 6px rgba(16,53,91,.5);
+    }
+}
+
+.p-projects-theme02 {
+    left: rem(5);
+
+    @include mq(tab) {
+        right: rem(-40);
+    }
+}
+
+.p-projects-textBox {
+    padding-top: rem(30);
+    max-width: rem(350);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.p-projects-textTitle h3 {
+    line-height: 1;
+    font-size: rem(28);
+    font-family: $font-family-base;
+    color: $text-black;
+    font-weight: 600;
+
+    @include mq(tab) {
+        font-size: rem(32);
+    }
+}
+
+
+.p-projects-text {
+    padding-top: rem(18);
+
+    @include mq(tab) {
+        padding-top: rem(28);
+    }
+}
+
+.p-projects-text p {
+    font-size: rem(14);
+    font-family: $font-family-base;
+    color: $text-black;
     line-height: (32 / 16);
+    font-weight: 300;
+
+    @include mq(tab) {
+        font-size: rem(16);
+    }
 }

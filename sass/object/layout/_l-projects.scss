@@ -1,3 +1,32 @@
 .l-projects {
-    margin-top: rem(180);
+    margin-top: rem(117);
+
+    @include mq(tab) {
+        margin-top: rem(180);
+    }
+}
+
+.l-projects-subtitle {
+    margin-top: rem(20);
+}
+
+.l-projects-cards {
+    margin-top: rem(-62);
+
+    @include mq(tab) {
+        margin-top: rem(-160);
+    }
+}
+
+.l-projects-card {
+
+}
+
+.l-projects-card:nth-child(n + 2) {
+    margin-top: rem(89);
+
+    @include mq(tab) {
+        margin-top: 0;
+        margin-left: rem(40);
+    }
 }
