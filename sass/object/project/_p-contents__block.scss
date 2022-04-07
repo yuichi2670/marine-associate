@@ -1,0 +1,8 @@
+.p-contents__block {
+    padding-top: rem(30);
+    @include mq(tab) {
+        display: flex;
+        width: 100%;
+        padding-top: rem(60);
+    }
+}

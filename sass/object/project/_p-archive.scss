@@ -1,0 +1,15 @@
+.p-archive {
+    text-align: center;
+    margin-bottom: rem(60);
+}
+
+.p-archive ul {
+    border-bottom: 1px solid $text-color-ac;
+}
+
+.p-archive li {
+    font-size: rem(14);
+    border-top: 1px solid $text-color-ac;
+    padding: rem(20);
+    text-align: left;
+}

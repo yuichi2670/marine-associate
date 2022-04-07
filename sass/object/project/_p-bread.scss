@@ -1,0 +1,38 @@
+.p-bread-inner {
+    padding: 0 rem(20) 0 rem(20);
+}
+
+.p-bread-inner ul {
+    display: flex;
+    justify-content: end;
+    /* text-align: right; */
+    /* margin-left: auto; */
+    font-family: $font-family-base;
+    font-size: rem(13);
+    color: $text-black;
+    
+}
+
+
+
+.p-bread-inner li {
+    display: inline-block;
+    position: relative;
+}
+
+.p-bread-inner li::before {
+    position: absolute;
+    content: ">";
+    top: 0;
+    right: rem(6);
+}
+
+.p-bread-inner li:last-child {
+    position: initial;
+}
+
+.p-bread-inner li:not(:last-child) {
+    padding-right: rem(20);
+}
+
+

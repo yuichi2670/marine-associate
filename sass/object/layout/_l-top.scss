@@ -1,3 +1,11 @@
 .l-top {
-    margin-top: rem(195);
+    margin-top: rem(68);
+
+    @include mq(tab) {
+        margin-top: rem(200);
+    }
+}
+
+.l-top-text {
+    margin-top: rem(-6);
 }

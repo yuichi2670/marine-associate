@@ -1,0 +1,10 @@
+.c-copy {
+    font-size: rem(12);
+    font-family: $font-family-base;
+    text-align: center;
+    padding: rem(34) 0;
+
+    @include mq(tab) {
+        padding: 0;
+    }
+}

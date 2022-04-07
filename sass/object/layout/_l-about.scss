@@ -1,3 +1,72 @@
 .l-about {
-    // margin-top: rem(70);
+    margin-top: rem(52);
+
+    @include mq(tab) {
+        margin-top: rem(250);
+    }
+}
+
+.l-about-subTitle {
+    margin-top: rem(9);
+}
+
+.l-about-container {
+    margin-top: rem(25);
+
+    @include mq(tab) {
+        margin-top: 3%;
+    }
+}
+
+.l-about-container2 {
+    margin-top: rem(39);
+
+    @include mq(tab) {
+        margin-top: rem(-100);
+        
+    }
+}
+
+.l-about-text p:nth-child(n + 2) {
+    margin-top: rem(14);
+
+    @include mq(tab) {
+        margin-top: rem(20);
+    }
+}
+
+.l-about-picture {
+    margin-top: rem(57);
+    margin-left: rem(10);
+
+    @include mq(tab) {
+        margin-top: rem(-50);
+        margin-right: rem(60);
+    }
+}
+
+.l-about-text02 {
+
+    @include mq(tab) {
+        margin-left: auto;
+        margin-top: rem(-150);
+        margin-left: rem(520);
+        padding-left: rem(80);
+    }
+}
+
+.l-about-text02 p:nth-child(n + 2) {
+    margin-top: rem(14);
+
+    @include mq(tab) {
+        margin-top: rem(20);
+    }
+}
+
+.l-about-btn {
+    margin-top: rem(70);
+
+    @include mq(tab) {
+        margin-top: rem(120);
+    }
 }
